@@ -23,13 +23,15 @@ requirements:
 
   run:
     - python >3.5
-    - xarray
-    - xskillscore >=0.0.5
+    - eofs
+    - matplotlib
+    - netcdf4
     - numpy
     - scipy
-    - eofs
-    - netcdf4
-    - matplotlib
+    - tqdm
+    - xarray
+    - xrft
+    - xskillscore >=0.0.9
 
 test:
   imports:
