@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "1.2.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: acdb7538546873325f9481f7e417ff10abdc94a875deb0f02693350919cd7405
+  sha256: 106061c8357ee12bdc9f824f2df9e675a0b118c9c2eee004ba629a1b3a36abae
 
 build:
   noarch: python
@@ -27,11 +27,12 @@ requirements:
     - matplotlib
     - netcdf4
     - numpy
+    - pandas
     - scipy
     - tqdm
     - xarray >=0.14.1
     - xrft
-    - xskillscore >=0.0.10
+    - xskillscore >=0.0.12
 
 test:
   imports:
