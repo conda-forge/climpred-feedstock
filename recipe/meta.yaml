@@ -25,6 +25,7 @@ requirements:
     - python >3.5
     - eofs
     - matplotlib
+    - netcdf4
     - numpy
     - pandas
     - scipy
