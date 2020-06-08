@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0.post1" %}
 
 package:
   name: {{ name }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 106061c8357ee12bdc9f824f2df9e675a0b118c9c2eee004ba629a1b3a36abae
+  sha256: 0a7038664d16c53a2d0951a2027230cd1ff97a94a96d8571705f9cfc4c577360
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv --no-deps"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
@@ -35,16 +35,16 @@ requirements:
 
 test:
   imports:
-    - climpred 
+    - climpred
 
 about:
   home: http://github.com/bradyrx/climpred
   license: MIT
   license_file: LICENSE.txt
-  summary: 'an xarray wrapper for analysis of ensemble forecast models for climate prediction'
+  summary: an xarray wrapper for analysis of ensemble forecast models for climate prediction
   doc_url: http://climpred.readthedocs.io/
   dev_url: https://github.com/bradyrx/climpred
 
 extra:
   recipe-maintainers:
-    - bradyrx 
+    - bradyrx
