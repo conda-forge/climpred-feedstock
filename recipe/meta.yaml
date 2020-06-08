@@ -22,6 +22,7 @@ requirements:
     - setuptools_scm_git_archive
   run:
     - python >3.5
+    - cftime >=1.1.2
     - eofs
     - matplotlib-base
     - netcdf4
@@ -29,9 +30,9 @@ requirements:
     - pandas
     - scipy
     - tqdm
-    - xarray >=0.14.1
+    - xarray >=0.15.1
     - xrft
-    - xskillscore >=0.0.12
+    - xskillscore >=0.0.15
 
 test:
   imports:
