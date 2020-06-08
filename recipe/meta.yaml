@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0.post1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 106061c8357ee12bdc9f824f2df9e675a0b118c9c2eee004ba629a1b3a36abae
+  sha256: 0a7038664d16c53a2d0951a2027230cd1ff97a94a96d8571705f9cfc4c577360
 
 build:
   number: 1
@@ -22,6 +22,7 @@ requirements:
     - setuptools_scm_git_archive
   run:
     - python >3.5
+    - cftime >=1.1.2
     - eofs
     - matplotlib-base
     - netcdf4
@@ -29,9 +30,9 @@ requirements:
     - pandas
     - scipy
     - tqdm
-    - xarray >=0.14.1
+    - xarray >=0.15.1
     - xrft
-    - xskillscore >=0.0.12
+    - xskillscore >=0.0.15
 
 test:
   imports:
