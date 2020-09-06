@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@bradyrx](https://github.com/bradyrx/)
+* [@aaronspring](https://github.com/aaronspring/)
 
