@@ -12,7 +12,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1 
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -42,13 +42,19 @@ test:
     - climpred
 
 about:
-  home: http://github.com/bradyrx/climpred
+  home: http://github.com/pangeo-data/climpred
   license: MIT
   license_file: LICENSE.txt
-  summary: an xarray wrapper for analysis of ensemble forecast models for climate prediction
+  summary: Verification of weather and climate forecasts
   doc_url: http://climpred.readthedocs.io/
-  dev_url: https://github.com/bradyrx/climpred
+  dev_url: https://github.com/pangeo-data/climpred
 
 extra:
   recipe-maintainers:
     - bradyrx
+    - aaronspring
+    - rabernat
+    - ahuang11
+    - dougiesquire
+    - raybellwaves
+    - kpegion
