@@ -1,13 +1,13 @@
 About climpred
 ==============
 
-Home: http://github.com/bradyrx/climpred
+Home: http://github.com/pangeo-data/climpred
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
-Summary: an xarray wrapper for analysis of ensemble forecast models for climate prediction
+Summary: Verification of weather and climate forecasts
 
 
 
@@ -116,6 +116,11 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bradyrx](https://github.com/bradyrx/)
 * [@aaronspring](https://github.com/aaronspring/)
+* [@ahuang11](https://github.com/ahuang11/)
+* [@bradyrx](https://github.com/bradyrx/)
+* [@dougiesquire](https://github.com/dougiesquire/)
+* [@kpegion](https://github.com/kpegion/)
+* [@rabernat](https://github.com/rabernat/)
+* [@raybellwaves](https://github.com/raybellwaves/)
 
