@@ -25,7 +25,7 @@ requirements:
     - python >3.5
     - cftime >=1.1.2
     - eofs
-    - esmtools>=1.1.3
+    - esmtools >=1.1.3
     - ipython
     - matplotlib-base
     - numpy
