@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "2.1.0.post1" %}
+{% set version = "2.1.1" %}
 
 
 package:
@@ -8,11 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0a7038664d16c53a2d0951a2027230cd1ff97a94a96d8571705f9cfc4c577360
-
+  sha256: 03b882319de5b924fe4194e6b41aa972c36a21558daad05f501a17775e11077d
 
 build:
-  number: 1 
+  number: 0 
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -26,16 +25,16 @@ requirements:
     - python >3.5
     - cftime >=1.1.2
     - eofs
+    - esmtools >=1.1.3
     - ipython
     - matplotlib-base
-    - netcdf4
     - numpy
     - pandas
     - scipy
-    - tqdm
-    - xarray >=0.15.1
+    - toolz
+    - xarray >=0.16.1
     - xrft
-    - xskillscore >=0.0.15
+    - xskillscore >=0.0.18
 
 test:
   imports:
