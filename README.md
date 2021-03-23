@@ -126,4 +126,3 @@ Feedstock Maintainers
 * [@rabernat](https://github.com/rabernat/)
 * [@raybellwaves](https://github.com/raybellwaves/)
 
-
