@@ -33,7 +33,7 @@ requirements:
     - toolz
     - xarray >=0.16.1
     - xrft
-    - dask != 2021.03.0
+    - dask !=2021.03.0
     - xskillscore >=0.0.20
     - netcdf4
     - nc-time-axis
