@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "2.1.3" %}
+{% set version = "2.1.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ebe0a06710783308c1bf67b100c02cff9121cc7eb5ad817bb0cf522a8c00e0ad
+  sha256: e70900863f5ce35a7426b0094818a692e11802409543acbb8ce8fb4a0fa346a4
 
 build:
   number: 0 
@@ -33,8 +33,8 @@ requirements:
     - toolz
     - xarray >=0.16.1
     - xrft
-    - dask <2021.03.0
-    - xskillscore >=0.0.19
+    - dask !=2021.03.0
+    - xskillscore >=0.0.20
     - netcdf4
     - nc-time-axis
 
