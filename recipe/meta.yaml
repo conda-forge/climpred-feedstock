@@ -37,6 +37,8 @@ requirements:
     - xskillscore >=0.0.20
     - netcdf4
     - nc-time-axis
+    - bias-correction
+    - statsmodels
 
 test:
   imports:
