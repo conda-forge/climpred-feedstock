@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "2.1.4" %}
+{% set version = "2.1.5.post1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e70900863f5ce35a7426b0094818a692e11802409543acbb8ce8fb4a0fa346a4
+  sha256: ba2ae18d12ccc0593d8f8d58f199d644ff70585fa07f7e06333c629e77f1f845
 
 build:
   number: 0 
@@ -37,6 +37,7 @@ requirements:
     - xskillscore >=0.0.20
     - netcdf4
     - nc-time-axis
+    - bias-correction
 
 test:
   imports:
