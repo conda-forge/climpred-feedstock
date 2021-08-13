@@ -48,7 +48,7 @@ about:
   license: MIT
   license_file: LICENSE.txt
   summary: Verification of weather and climate forecasts
-  doc_url: http://climpred.readthedocs.io
+  doc_url: http://climpred.readthedocs.io/
   dev_url: https://github.com/pangeo-data/climpred
 
 extra:
