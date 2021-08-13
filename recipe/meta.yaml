@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "2.1.5.post0" %}
+{% set version = "2.1.5.post1" %}
 
 
 package:
