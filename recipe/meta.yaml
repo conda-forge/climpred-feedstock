@@ -37,6 +37,7 @@ requirements:
     - xskillscore >=0.0.20
     - netcdf4
     - nc-time-axis
+    - cf_xarray
     - bias_correction
 
 test:
