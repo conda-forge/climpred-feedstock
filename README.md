@@ -121,8 +121,4 @@ Feedstock Maintainers
 * [@aaronspring](https://github.com/aaronspring/)
 * [@ahuang11](https://github.com/ahuang11/)
 * [@bradyrx](https://github.com/bradyrx/)
-* [@dougiesquire](https://github.com/dougiesquire/)
-* [@kpegion](https://github.com/kpegion/)
-* [@rabernat](https://github.com/rabernat/)
-* [@raybellwaves](https://github.com/raybellwaves/)
 
