@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "2.1.6" %}
+{% set version = "2.2.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 76582e8c8b97655fa8959499b6f64932712e84bbd97043fa741b59401ac83625
+  sha256: 2108e314e8b93a8999e63847a98e8e8783c15f2ae40e945d51ed06cac0bf5646
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -23,7 +23,7 @@ requirements:
     - setuptools_scm_git_archive
   run:
     - python >3.6
-    - cftime >=1.1.2
+    - cftime >=1.5.0
     - eofs
     - ipython
     - matplotlib-base
@@ -33,13 +33,17 @@ requirements:
     - toolz
     - xarray >=0.19.0
     - xrft
-    - dask !=2021.03.0
+    - dask-core >=2021.10.0
     - xskillscore >=0.0.20
     - netcdf4
-    - nc-time-axis >=1.3.1
+    - nc-time-axis >=1.4.0
     - cf_xarray >=0.6.0
     - bias_correction >=0.4
-    - xclim >=0.29
+    - xclim !=0.30.0
+    - xesmf
+    - esmpy =*=mpi*
+    - numba >=0.52
+    - bottleneck
 
 test:
   imports:
