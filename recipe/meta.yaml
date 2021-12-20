@@ -1,7 +1,6 @@
 {% set name = "climpred" %}
 {% set version = "2.2.0" %}
 
-
 package:
   name: {{ name }}
   version: {{ version }}
