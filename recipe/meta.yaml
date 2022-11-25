@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2108e314e8b93a8999e63847a98e8e8783c15f2ae40e945d51ed06cac0bf5646
+  sha256: 3311efc205cfc89bb555172a3ba17f5dd4f515fda07ca91222544a401de2f053
 
 build:
   number: 0
@@ -39,7 +39,7 @@ requirements:
     - nc-time-axis >=1.4.0
     - cf_xarray >=0.6.0
     - bias_correction >=0.4
-    - xclim !=0.30.0
+    - xclim >0.38.0
     - xesmf
     - esmpy =*=mpi*
     - numba >=0.52
