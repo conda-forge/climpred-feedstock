@@ -11,7 +11,7 @@ source:
   sha256: 3311efc205cfc89bb555172a3ba17f5dd4f515fda07ca91222544a401de2f053
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -31,7 +31,7 @@ requirements:
     - pandas
     - scipy
     - toolz
-    - xarray >=0.19.0
+    - xarray < 2023.01
     - xrft
     - dask-core >=2021.10.0
     - xskillscore >=0.0.20
