@@ -1,7 +1,6 @@
 {% set name = "climpred" %}
 {% set version = "2.3.0" %}
 
-
 package:
   name: {{ name }}
   version: {{ version }}
@@ -23,31 +22,35 @@ requirements:
     - setuptools_scm_git_archive
   run:
     - python >3.6
+    - bias_correction >=0.4
+    - bottleneck
+    - cf_xarray >=0.6.0
     - cftime >=1.5.0
+    - dask-core >=2021.10.0
     - eofs
+#     - esmpy =*=mpi*
     - ipython
     - matplotlib-base
+    - nc-time-axis >=1.4.0
+    - netcdf4
+    - numba >=0.52
     - numpy
     - pandas
     - scipy
     - toolz
     - xarray <2023.01
-    - xrft
-    - dask-core >=2021.10.0
-    - xskillscore >=0.0.20
-    - netcdf4
-    - nc-time-axis >=1.4.0
-    - cf_xarray >=0.6.0
-    - bias_correction >=0.4
     - xclim >0.38.0
     - xesmf
-    - esmpy =*=mpi*
-    - numba >=0.52
-    - bottleneck
+    - xrft
+    - xskillscore >=0.0.20
 
 test:
+  requires:
+    - pip
   imports:
     - climpred
+  commands:
+    - pip check
 
 about:
   home: http://github.com/pangeo-data/climpred
