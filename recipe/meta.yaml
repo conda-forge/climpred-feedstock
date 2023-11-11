@@ -25,7 +25,6 @@ requirements:
     - bias_correction >=0.4
     - bottleneck
     - cf_xarray >=0.6.0
-    - cftime >=1.5.0
     - dask-core >=2021.10.0
     - eofs
     - matplotlib-base
