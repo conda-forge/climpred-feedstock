@@ -16,30 +16,28 @@ build:
 
 requirements:
   host:
-    - python >3.6
+    - python >3.8
     - pip
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - python >3.6
+    - python >3.8
     - bias_correction >=0.4
     - bottleneck
     - cf_xarray >=0.6.0
     - cftime >=1.5.0
     - dask-core >=2021.10.0
     - eofs
-#     - esmpy =*=mpi*
-    - ipython
+    - netcdf4
     - matplotlib-base
     - nc-time-axis >=1.4.0
-    - netcdf4
     - numba >=0.52
     - numpy
     - pandas
+    - pooch >=1.4
     - scipy
-    - toolz
-    - xarray <2023.01
-    - xclim >0.38.0
+    - xarray
+    - xclim >=0.46
     - xesmf
     - xrft
     - xskillscore >=0.0.20
