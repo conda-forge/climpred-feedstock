@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name }}
@@ -7,39 +7,37 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3311efc205cfc89bb555172a3ba17f5dd4f515fda07ca91222544a401de2f053
+  sha256: 345d84fb9bce4275deb613725e3451fd7205712edca7cd01f0175460fad6f7a5
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
-    - python >3.6
+    - python >3.8
     - pip
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - python >3.6
+    - python >3.8
     - bias_correction >=0.4
     - bottleneck
     - cf_xarray >=0.6.0
-    - cftime >=1.5.0
     - dask-core >=2021.10.0
     - eofs
-#     - esmpy =*=mpi*
-    - ipython
     - matplotlib-base
     - nc-time-axis >=1.4.0
     - netcdf4
     - numba >=0.52
     - numpy
     - pandas
+    - pooch >=1.4
     - scipy
     - toolz
-    - xarray <2023.01
-    - xclim >0.38.0
+    - xarray
+    - xclim >=0.46
     - xesmf
     - xrft
     - xskillscore >=0.0.20
@@ -66,4 +64,3 @@ extra:
     - bradyrx
     - aaronspring
     - ahuang11
-    - Zeitsperre
