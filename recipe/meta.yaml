@@ -1,5 +1,5 @@
 {% set name = "climpred" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 345d84fb9bce4275deb613725e3451fd7205712edca7cd01f0175460fad6f7a5
+  sha256: 0948dc72beac30bdf782e123a391db46e7472ed2cf151afc8e8c6c980151fc44
 
 build:
   number: 0
@@ -16,27 +16,28 @@ build:
 
 requirements:
   host:
-    - python >3.8
+    - python >3.9
     - pip
-    - setuptools_scm
-    - setuptools_scm_git_archive
+    - setuptools >=64.0
+    - setuptools_scm >=8.0
+    - wheel
   run:
-    - python >3.8
+    - python >3.9
     - bias_correction >=0.4
     - bottleneck
+    - cftime >=1.5.0
     - cf_xarray >=0.6.0
     - dask-core >=2021.10.0
     - eofs
     - matplotlib-base
     - nc-time-axis >=1.4.0
-    - netcdf4
     - numba >=0.52
-    - numpy
-    - pandas
+    - numpy >=1.25.0,<2.0.0
+    - packaging
     - pooch >=1.4
-    - scipy
+    - scipy >=1.2
     - toolz
-    - xarray
+    - xarray >=2022.06.0
     - xclim >=0.46
     - xesmf
     - xrft
@@ -53,10 +54,13 @@ test:
 about:
   home: http://github.com/pangeo-data/climpred
   license: MIT
+  license_family: MIT
   license_file: LICENSE.txt
+  license_url: https://github.com/pangeo-data/climpred/blob/main/LICENSE.txt
   summary: Verification of weather and climate forecasts
-  doc_url: http://climpred.readthedocs.io
   dev_url: https://github.com/pangeo-data/climpred
+  doc_url: http://climpred.readthedocs.io/en/stable/
+  doc_source_url: https://github.com/pangeo-data/climpred/blob/main/README.rst
 
 extra:
   recipe-maintainers:
