@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "climpred" %}
 {% set version = "2.5.0" %}
 
@@ -6,23 +7,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0948dc72beac30bdf782e123a391db46e7472ed2cf151afc8e8c6c980151fc44
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
-    - python >3.9
+    - python {{ python_min }}
     - pip
     - setuptools >=64.0
     - setuptools_scm >=8.0
     - wheel
   run:
-    - python >3.9
+    - python >={{ python_min }}
     - bias_correction >=0.4
     - bottleneck
     - cftime >=1.5.0
@@ -46,6 +47,7 @@ requirements:
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - climpred
   commands:
