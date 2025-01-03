@@ -5,13 +5,13 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/climpred-feedst
 
 Home: http://github.com/pangeo-data/climpred
 
-Package license: MIT
+Package license: [MIT](https://github.com/pangeo-data/climpred/blob/main/LICENSE.txt)
 
 Summary: Verification of weather and climate forecasts
 
 Development: https://github.com/pangeo-data/climpred
 
-Documentation: http://climpred.readthedocs.io
+Documentation: http://climpred.readthedocs.io/en/stable/
 
 Current build status
 ====================
