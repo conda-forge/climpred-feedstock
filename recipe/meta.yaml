@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "climpred" %}
-{% set version = "2.5.0" %}
+{% set version = "2.6.0" %}
 
 package:
   name: {{ name }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0948dc72beac30bdf782e123a391db46e7472ed2cf151afc8e8c6c980151fc44
+  sha256: b4cc1d989e4965f77b9184270ed7e537b60766498fb4c7ccd64247d84b6d77de
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -19,30 +19,30 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools >=64.0
+    - setuptools >=77.0
     - setuptools_scm >=8.0
     - wheel
   run:
     - python >={{ python_min }}
     - bias_correction >=0.4
     - bottleneck
-    - cftime >=1.5.0
-    - cf_xarray >=0.6.0
-    - dask-core >=2021.10.0
+    - cftime >=1.6.3
+    - cf_xarray >=0.8.0
+    - dask-core >=2023.4
     - eofs
     - matplotlib-base
     - nc-time-axis >=1.4.0
-    - numba >=0.52
-    - numpy >=1.25.0,<2.0.0
-    - packaging
-    - pooch >=1.4
-    - scipy >=1.2
+    - numba >=0.57
+    - numpy >=2.0.0
+    - packaging >=23.0
+    - pooch >=1.8
     - toolz
-    - xarray >=2022.06.0
-    - xclim >=0.46
+    - xarray >=2024.5
+    - xclim >=0.52
     - xesmf
     - xrft
-    - xskillscore >=0.0.20
+    - xsdba >=0.4
+    - xskillscore >=0.0.29
 
 test:
   requires:
